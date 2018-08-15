@@ -1,0 +1,7 @@
+﻿"Phrases"
+{
+	"parachute" // add this phrase to your \addons\sourcemod\translations\store.phrases.txt
+	{
+		"en" "Parachute"
+	}
+}

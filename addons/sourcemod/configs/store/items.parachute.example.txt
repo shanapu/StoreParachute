@@ -1,0 +1,28 @@
+"Store"
+{
+	"Parachute"  // add something like this to your \addons\sourcemod\configs\store\items.txt
+	{
+		"Rainbow"
+		{
+			"model" "models/parachute/parachute_rainbow.mdl"
+			"price" "1"
+			"fallspeed" "80.0"
+			"type" "parachute"
+		}
+		"Blue"
+		{
+			"model" "models/parachute/parachute_blue.mdl"
+			"price" "1"
+			"fallspeed" "100.0"
+			"type" "parachute"
+		}
+		"Gargoyle"
+		{
+			"model" "models/parachute/gargoyle.mdl"
+			"price" "1"
+			"fallspeed" "50.0"
+			"type" "parachute"
+			"flag" "a"
+		}
+	}
+}
