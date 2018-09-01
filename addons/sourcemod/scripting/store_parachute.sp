@@ -1,7 +1,7 @@
 /*
  * Parachutes for Zephyrus store
  * by: shanapu
- * https://github.com/shanapu/MyJailbreak/
+ * https://github.com/shanapu/StoreParachute/
  * 
  * used code by zipcore
  * https://gitlab.com/Zipcore/HungerGames/blob/master/addons/sourcemod/scripting/hungergames/tools/parachute.sp
@@ -86,6 +86,10 @@ public bool ParaChute_Config(Handle &kv, int itemid)
 
 	KvGetString(kv, "model", g_sModels[g_iModelCount], PLATFORM_MAX_PATH);
 	g_fSpeed[g_iModelCount] = KvGetFloat(kv, "fallspeed", 100.0);
+
+	if (!FileExists(g_sModels[g_iModelCount], true))
+		return false;
+
 	g_iModelCount++;
 
 	return true;
