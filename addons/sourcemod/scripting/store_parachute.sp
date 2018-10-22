@@ -51,7 +51,7 @@ public Plugin myinfo = {
 	name = "Parachute for Zephyrus Store",
 	author = "shanapu",
 	description = "Adds support for parachutes to Zephyrus Store plugin",
-	version = "1.0",
+	version = "1.1",
 	url = "https://github.com/shanapu/StoreParachute"
 };
 
@@ -109,6 +109,11 @@ public int ParaChute_Remove(int client)
 	g_bItem[client] = false;
 
 	return 0;
+}
+
+public void OnClientDisconnect(int client)
+{
+	g_bItem[client] = false;
 }
 
 public Action OnPlayerRunCmd(int client, int &buttons, int &impulse, float vel[3], float angles[3], int &weapon, int &subtype, int &cmdnum, int &tickcount, int &seed, int mouse[2])
