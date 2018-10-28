@@ -51,7 +51,7 @@ public Plugin myinfo = {
 	name = "Parachute for Zephyrus Store",
 	author = "shanapu",
 	description = "Adds support for parachutes to Zephyrus Store plugin",
-	version = "1.1",
+	version = "1.2",
 	url = "https://github.com/shanapu/StoreParachute"
 };
 
@@ -100,7 +100,7 @@ public int ParaChute_Equip(int client, int id)
 	g_iClientModel[client] = Store_GetDataIndex(id);
 	g_bItem[client] = true;
 
-	return 0;
+	return -1;
 }
 
 public int ParaChute_Remove(int client)
